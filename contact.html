@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact: Verrow</title>
+<meta name="description" content="Contact MangoStack Ltd about Verrow.">
+<meta name="theme-color" content="#14140F">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2314140F'/%3E%3Cpath d='M8 9h3.4L16 20.6 20.6 9H24l-6.4 15h-3.2z' fill='%23F2EFE6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:5rem}
+body{margin:0;background:#F2EFE6;color:#14140F;font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+.m{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.serif{font-family:"Newsreader",Georgia,"Times New Roman",serif}
+a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible{outline:3px solid #14140F;outline-offset:3px}
+p,h1,h2,h3,blockquote,figure,ol,ul{margin:0}
+h1,h2{text-wrap:balance}
+p{text-wrap:pretty}
+img{display:block;max-width:100%}
+.skip{position:absolute;left:1rem;top:-5rem;background:#CDF23F;color:#14140F;padding:.75rem 1rem;z-index:30;font-weight:700}
+.skip:focus{top:.5rem}
+.w{max-width:80rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+.lab{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+
+.glass{background:rgba(242,239,230,.86);border:1px solid #14140F;-webkit-backdrop-filter:blur(14px) saturate(1.1);backdrop-filter:blur(14px) saturate(1.1)}
+.tone{filter:saturate(.78) sepia(.12) contrast(1.04)}
+@supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){.glass{background:#F2EFE6}}
+@media (prefers-reduced-transparency:reduce){.glass{background:#F2EFE6;-webkit-backdrop-filter:none;backdrop-filter:none}}
+
+.notice{background:#14140F;color:#F2EFE6}
+.notice .w{display:flex;gap:.5rem 1rem;align-items:center;flex-wrap:wrap;min-height:2.5rem;padding-top:.5rem;padding-bottom:.5rem;font-size:.875rem}
+.notice .tag{border:1px solid #F2EFE6;padding:.0625rem .5rem}
+
+header.glass{position:sticky;top:0;z-index:20;border-width:0 0 1px}
+header .w{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4rem}
+.mark{font-size:1.125rem;font-weight:600;letter-spacing:.26em;text-decoration:none}
+.hnav{display:flex;align-items:center;gap:1.25rem}
+.hnav a{font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;min-height:2.75rem}
+.hnav a:hover{text-decoration:underline}
+
+.hero{position:relative;isolation:isolate;background:#8E8A7E;border-bottom:1px solid #14140F;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,20,15,.22) 0,rgba(20,20,15,0) 28%,rgba(20,20,15,0) 58%,rgba(242,239,230,.5) 100%)}
+.hero .w{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem;padding-top:clamp(6rem,22vh,12rem);padding-bottom:1.25rem}
+@media (min-width:62rem){.hero .w{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:end;gap:1.25rem;padding-top:clamp(10rem,30vh,18rem);padding-bottom:1.5rem}}
+.hero .copy{padding:clamp(1.5rem,3.5vw,2.5rem);display:flex;flex-direction:column;gap:1.25rem}
+h1{font-family:"Newsreader",Georgia,serif;font-size:clamp(2.5rem,5.6vw,4.5rem);line-height:1;font-weight:500;letter-spacing:-.025em}
+.lede{font-size:clamp(1.0625rem,1.4vw,1.1875rem);line-height:1.55;max-width:40ch}
+.btn{display:inline-flex;align-items:center;gap:.625rem;min-height:3rem;padding:0 1.25rem;border:1px solid #14140F;background:#CDF23F;color:#14140F;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8125rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;align-self:flex-start}
+.btn{transition:background-color .15s,color .15s}
+.btn:hover{background:#14140F;color:#CDF23F}
+
+.spec figcaption{color:#3A372F;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-bottom:1px solid #14140F;padding:.75rem 1rem;font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase}
+.spec ol{list-style:none;padding:0}
+.spec li{padding:.875rem 1rem;border-bottom:1px solid rgba(20,20,15,.35);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.25rem 1rem}
+.spec li:last-child{border-bottom:0}
+.spec .duty{font-weight:600;line-height:1.3;font-size:.9375rem}
+.spec .st{font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-align:right;white-space:nowrap}
+.spec .cite{grid-column:1/-1;font-size:.75rem;line-height:1.45;color:#3A372F}
+.spec .gap{border-left:3px solid #B45309;padding-left:calc(1rem - 3px)}
+.spec .gap .st{color:#7A4E12}
+
+.sec{border-bottom:1px solid #14140F}
+.sec>.w{padding-top:clamp(4.5rem,9vw,7.5rem);padding-bottom:clamp(4.5rem,9vw,7.5rem)}
+h2{font-family:"Newsreader",Georgia,serif;font-size:clamp(2rem,4vw,3.25rem);line-height:1.05;font-weight:500;letter-spacing:-.02em;max-width:20ch}
+.kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#5C5647;margin-bottom:1rem;display:flex;align-items:center;gap:.75rem}
+.kicker::before{content:"";width:1.5rem;height:1px;background:#14140F}
+
+.gets{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem}
+@media (min-width:62rem){.gets{grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:5rem;align-items:end}}
+.prose{font-family:"Newsreader",Georgia,serif;font-size:clamp(1.5rem,2.6vw,2.125rem);line-height:1.34;font-weight:400;letter-spacing:-.008em;max-width:30ch;margin-top:1.75rem}
+.prose .i{border-bottom:1px solid #A29B89}
+.aside{font-size:1rem;color:#413C33;max-width:44ch;margin-top:1.5rem}
+.photo{margin:0;display:flex;flex-direction:column;gap:.625rem}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid #14140F;image-rendering:auto;background:#B8AE98;max-height:60vh}
+@media (min-width:62rem){.photo img{max-height:none}}
+
+.srcbg{position:relative;isolation:isolate;overflow:hidden;background:#E7E3D8}
+.srcbg>img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;z-index:-2;transform:scale(1.12);filter:saturate(.6) sepia(.18) blur(18px)}
+.srcbg::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(242,239,230,.94) 0,rgba(242,239,230,.78) 38%,rgba(231,227,216,.62) 100%)}
+.ledger{margin-top:2.5rem;display:grid;grid-template-columns:minmax(0,1fr);border:1px solid #14140F;background:rgba(251,250,246,.93);-webkit-backdrop-filter:blur(16px) saturate(1.1);backdrop-filter:blur(16px) saturate(1.1)}
+@media (prefers-reduced-transparency:reduce){.ledger{background:#FBFAF6;-webkit-backdrop-filter:none;backdrop-filter:none}}
+@media (min-width:48rem){.ledger{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.entry{display:flex;flex-direction:column;gap:1rem;padding:clamp(1.25rem,2.4vw,1.75rem);border-bottom:1px solid #14140F;min-width:0}
+.entry:last-child{border-bottom:0}
+@media (min-width:48rem){.entry{border-bottom:0;border-right:1px solid #14140F}.entry:last-child{border-right:0}}
+.margin{display:flex;flex-direction:column;gap:.375rem;padding-bottom:1rem;border-bottom:1px solid #D5CFC0}
+.margin .ml,.miss .ml{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#413C33}
+.margin .duty{font-size:1.125rem;font-weight:600;line-height:1.4;letter-spacing:-.005em}
+.leaf{margin:0;display:flex;flex-direction:column;gap:.875rem;flex:1}
+.leaf .ref{font-size:.8125rem;color:#413C33;order:-1}
+.leaf .body{font-family:"Newsreader",Georgia,serif;font-size:1.25rem;line-height:1.55;font-weight:400;color:#14140F;flex:1;font-optical-sizing:auto}
+.leaf mark{background:none;color:inherit}
+.leaf .body::before{content:"\201C"}
+.leaf .body::after{content:"\201D"}
+.leaf .src{font-size:.875rem;line-height:1.5;color:#14140F;border-top:1px solid #D5CFC0;padding-top:.875rem}
+.miss{margin-top:.25rem;padding-top:1rem;border-top:2px solid #14140F;display:flex;flex-direction:column;gap:.375rem}
+.miss .what{font-size:1.0625rem;font-weight:500;line-height:1.5;color:#14140F}
+.miss .cite{font-size:.8125rem;line-height:1.5;color:#413C33}
+@media (min-width:48rem){.ledger .miss{margin-top:auto}.ledger .leaf .src{margin-top:auto}}
+@supports (grid-template-rows:subgrid){@media (min-width:48rem){.ledger{grid-template-rows:auto auto auto}.ledger .entry{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:1rem}.ledger .miss{margin-top:0}}}
+.close{font-family:"Newsreader",Georgia,serif;font-size:clamp(1.5rem,2.8vw,2.125rem);font-weight:500;letter-spacing:-.015em;line-height:1.1;margin-top:clamp(2rem,4vw,3rem);max-width:24ch}
+
+.about{display:grid;grid-template-columns:minmax(0,1fr);gap:1.5rem 5rem}
+@media (min-width:62rem){.about{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start}}
+.about .txt{display:flex;flex-direction:column;gap:1.25rem;max-width:40rem}
+.about .txt p{font-size:clamp(1.125rem,1.5vw,1.25rem);line-height:1.6;color:#2E2A23}
+.about .txt p:first-child{font-family:"Newsreader",Georgia,serif;font-size:clamp(1.375rem,2.2vw,1.75rem);line-height:1.4;color:#14140F}
+.about .to{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;align-self:flex-start;display:inline-flex;align-items:center;min-height:2.75rem}
+.band{position:relative;isolation:isolate;background:#7F7A6C;border-bottom:1px solid #14140F;overflow:hidden}
+.band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(242,239,230,.35) 0,rgba(242,239,230,0) 55%)}
+.band .w{padding-top:clamp(4rem,12vh,8rem);padding-bottom:clamp(4rem,12vh,8rem)}
+.price-card{max-width:44rem;padding:clamp(1.25rem,3vw,2rem);display:flex;flex-direction:column;gap:1.25rem}
+.price-card h2{font-size:clamp(1.875rem,3.4vw,2.625rem)}
+table{width:100%;border-collapse:collapse;border-top:1px solid #14140F}
+th,td{text-align:left;padding:1rem .5rem 1rem 0;border-bottom:1px solid rgba(20,20,15,.35);vertical-align:baseline}
+thead th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.6875rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding-top:.75rem;padding-bottom:.75rem;border-bottom:1px solid #14140F}
+tbody th{font-size:clamp(1.125rem,1.8vw,1.3125rem);font-weight:600}
+.r{text-align:right;padding-right:0}
+.price{font-family:"Newsreader",Georgia,serif;font-size:clamp(1.875rem,3.6vw,2.625rem);font-weight:500;line-height:1}
+.fine{font-size:.9375rem;max-width:56ch}
+
+.reg{background:#CDF23F;border-bottom:1px solid #14140F}
+.reg .w{padding-top:4.5rem;padding-bottom:5rem;display:flex;flex-direction:column;gap:1.5rem}
+.reg h2{font-size:clamp(2.5rem,6vw,4.75rem);max-width:none;line-height:1}
+.addr{font-size:clamp(1.25rem,3.6vw,2.25rem);font-weight:500;overflow-wrap:anywhere;align-self:flex-start;display:inline-flex;min-height:2.75rem;align-items:center}
+
+.steps{list-style:none;padding:0;margin-top:2.5rem;display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid #14140F}
+@media (min-width:48rem){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.steps li{display:flex;flex-direction:column;gap:.75rem;padding:1.75rem 0;border-bottom:1px solid #14140F}
+@media (min-width:48rem){.steps li{padding:2rem 2rem 0 0;border-bottom:0}.steps li+li{padding-left:2rem;border-left:1px solid #14140F}}
+.steps .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.75rem;letter-spacing:.12em;color:#5C5647}
+.steps h3{font-family:"Newsreader",Georgia,serif;font-size:clamp(1.5rem,2.4vw,1.875rem);font-weight:500;line-height:1.15;letter-spacing:-.015em}
+.steps p{font-size:1.0625rem;line-height:1.6;color:#2E2A23;max-width:36ch}
+.faq{margin-top:2.5rem;border-top:1px solid #14140F;max-width:52rem}
+.faq details{border-bottom:1px solid #14140F}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;padding:1.375rem 0;font-size:clamp(1.125rem,1.6vw,1.25rem);font-weight:600;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:400;font-size:1.25rem;line-height:1}
+.faq details[open] summary::after{content:"\2212"}
+.faq summary:focus-visible{outline:3px solid #14140F;outline-offset:3px}
+.faq .a{padding:0 0 1.5rem;font-size:1.0625rem;line-height:1.65;color:#2E2A23;max-width:60ch;display:flex;flex-direction:column;gap:.75rem}
+.flinks{display:flex;gap:1.25rem;flex-wrap:wrap}
+@media (max-width:47.99rem){.hnav .opt{display:none}}
+.page .w.body{padding-top:clamp(3.5rem,8vw,6rem);padding-bottom:clamp(4rem,9vw,7rem);max-width:52rem;margin-left:auto;margin-right:auto}
+.page h1{font-size:clamp(2.25rem,5vw,3.5rem);margin-top:.25rem}
+.page .doc{margin-top:2.5rem;display:flex;flex-direction:column;gap:1rem;font-size:1.0625rem;line-height:1.7;color:#2E2A23}
+.page .doc h2{font-size:clamp(1.375rem,2.4vw,1.75rem);max-width:none;margin-top:1.75rem;color:#14140F}
+.page .doc ul{padding-left:1.25rem;display:flex;flex-direction:column;gap:.5rem}
+.page .meta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:#5C5647;margin-top:1rem}
+.page .todo{background:#FBF1E4;border-bottom:1px solid #B45309;color:#7A4E12;padding:0 .25rem}
+.contact{margin-top:2.5rem;border-top:1px solid #14140F;display:grid;grid-template-columns:minmax(0,1fr)}
+.contact>div{display:grid;grid-template-columns:minmax(0,1fr);gap:.375rem;padding:1.5rem 0;border-bottom:1px solid #14140F}
+@media (min-width:40rem){.contact>div{grid-template-columns:12rem minmax(0,1fr);gap:1.5rem}}
+.contact .k{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:#5C5647;padding-top:.3rem}
+.contact .v{font-size:1.125rem;line-height:1.55}
+.contact .v a.big{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:clamp(1.125rem,2.4vw,1.5rem);font-weight:500}
+footer .w{padding-top:2.5rem;padding-bottom:3rem;display:flex;flex-direction:column;gap:.5rem;font-size:.8125rem;color:#413C33}
+footer .row{padding-bottom:1rem;margin-bottom:.5rem;border-bottom:1px solid #D5CFC0}
+footer .row{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wrap:wrap;color:#14140F}
+@media print{.notice,.skip{display:none}header{position:static}.hero>img,.band>img,.srcbg>img{display:none}.glass{background:#FFFFFF}.reg{background:#FFFFFF}}
+</style>
+</head>
+<body class="page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="glass">
+  <div class="w">
+    <a class="mark m" href="index.html" aria-label="Verrow, home">VERROW</a>
+    <nav class="hnav m" aria-label="Site">
+      <a class="opt" href="index.html#h-how">How it works</a>
+      <a href="index.html#h-price">Pricing</a>
+      <a href="index.html#register">Register</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="w body">
+    <p class="kicker">Contact</p>
+    <h1>Write to us.</h1>
+    <div class="contact">
+      <div><span class="k">Email</span><span class="v"><a class="big" href="mailto:hello@mangostack.co.uk">hello@mangostack.co.uk</a></span></div>
+      <div><span class="k">Register interest</span><span class="v">Email us with the subject &ldquo;Register interest&rdquo; and we will write to you when Verrow opens.</span></div>
+      <div><span class="k">Company</span><span class="v">MangoStack Ltd. Registered in England and Wales, company number 17196444. Registered office: 23 Eston Grove, Sunderland, England, SR5 1QB.</span></div>
+      <div><span class="k">Also</span><span class="v"><a href="https://mangostack.co.uk">mangostack.co.uk</a></span></div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="w">
+    <div class="row">
+      <span class="m lab">Verrow</span>
+      <nav class="flinks" aria-label="Site"><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></nav>
+    </div>
+    <p>Verrow is a product of MangoStack Ltd. &copy; 2026 MangoStack Ltd.</p>
+    <p>MangoStack Ltd. Registered in England and Wales, company number 17196444. Registered office: 23 Eston Grove, Sunderland, England, SR5 1QB.</p>
+    <p>Legislation quoted is Crown copyright, used under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>. Photographs from <a href="https://unsplash.com">Unsplash</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
